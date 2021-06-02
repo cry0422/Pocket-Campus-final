@@ -1,0 +1,42 @@
+/* pages/map/map.wxss */
+.map_container {
+  height: 100vh;
+  width: 100%;
+}
+ 
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.select-info {
+  position: relative;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 0px 15px;
+  color: #999;
+}
+
+.select-info .selected {
+  line-height: 40px;
+}
+
+.select-info .select-list {
+  overflow-y: scroll;
+  max-height: 120px;
+}
+
+.select-info .select-list .select-item .item {
+  line-height: 30px;
+}
+
+.select-info .select-cancel {
+  height: 40px;
+  line-height: 40px;
+  color: rgb(26, 173, 25);
+  text-align: center;
+}

@@ -1,0 +1,106 @@
+/* pages/activity/activity.wxss */
+/* 搜索框样式 */
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 60rpx;
+  background-color: whitesmoke;
+  margin-top: 5%;
+  margin-left: 10%;
+  border: 1rpx solid whitesmoke;
+  border-radius: 5rpx;
+}
+/* 搜索框提示文字样式 */
+.search input
+{
+  font-size:25rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left:30rpx; 
+}
+
+/* 搜索框小图标 */
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-right:20rpx;
+}
+
+/* 加号小图标 */
+.add_icon{
+  position: fixed;
+  width:50px;
+  height:55px;
+  bottom: 30px;
+  right: 20px;
+}
+
+.cal{font-size: larger;
+  color: black;
+  display: flex;
+  vertical-align: center; 
+  justify-content: center;
+  margin-top: 10%;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20rpx;
+}
+
+.out {
+  width: 80%;
+  justify-content: space-around;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+  align-items: center;
+  background-color:white;
+  }
+
+.out scroll-view{
+    height: 180px;
+  }
+  
+.out .item {
+  height: 100px;
+  margin: 5px;
+  margin-left: 10rpx;
+  }
+
+.topic {
+    border:lightskyblue 1rpx solid;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+  }
+
+.ttl {
+    font-size: larger;
+    display: flex;
+    flex-flow: column;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.ctt {
+  font-size: xx-small;
+}
+.in-image{
+  margin-top: 5rpx;
+  width:560rpx;
+  height:300rpx;
+}
+
+/*分割线样式*/
+.divLine{
+  margin-top: 30rpx;
+  background: lightskyblue;
+  width: 100%;
+  height: 2rpx;
+ }
+
+.activityMenu{
+  background-color: white;
+  text-align: center;
+}

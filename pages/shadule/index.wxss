@@ -1,0 +1,102 @@
+.cal{font-size: larger;
+  color: blueviolet;
+  display: flex;
+  vertical-align: center; 
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.scrOut1{border: 4px blueviolet double;display: flex; flex-wrap: nowrap;justify-content: space-around}
+.scrBox1{width: 100px; height: 20px; margin-inline: auto;flex:0 0 10px;color: blueviolet;}
+.page-section-spacing{
+margin-top: 10rpx;
+}
+
+.scroll-view-item{
+height: 200rpx;
+}
+
+.dep{font-size: larger;
+color:blueviolet;
+display: flex;
+vertical-align: center; 
+justify-content: center;
+font-weight: bold;
+font-style: italic;
+}
+.scrOut2{border: 4px blueviolet double; display: flex; flex-wrap: nowrap;justify-content: space-around}
+.scrBox2{width: 100px; height: 20px; margin-inline: auto;color:blueviolet;flex:0 0 10px;}
+
+.ipt{border:1px solid #dddddd; padding:0 10rpx;box-sizing: border-box;width: 250px; margin-inline: auto;}
+
+.icon-box{display: flex;justify-content: center;}
+.myhead {
+height: 450 rpx;
+width: 100%;
+}
+.image_head{
+width: 100%;
+height: 100%;
+}
+
+.scroll-view_H{
+white-space: nowrap;
+}
+.scroll-view-item_H{
+display: inline-block;
+width: 100%;
+height: 150rpx;
+}
+
+.out {
+width: 100%;
+justify-content: space-around;
+}
+
+/**设置高度就会出现纵向滚动条**/
+.out scroll-view{
+  height: 180px;
+}
+
+.out .item {
+height: 100px;
+margin: 10px;
+}
+
+
+.tr {
+display: flex;
+width: 100%;
+justify-content: center;
+height: 3rem;
+align-items: center;
+}
+
+.th {
+width: 100%;
+justify-content: center;
+display: flex;
+height: 3rem;
+align-items: center;
+}
+
+.u-wrp-bnr {
+width: 100%;
+height: 400rpx;
+display: block;
+position: relative;
+top: 0rpx;
+background: #f0f0f0;
+}
+.u-img-slide {
+width: 100%;
+height: inherit;
+}
+.background-image{
+height : 100%;
+position: absolute;
+width: 100%;
+left: 0px;
+top: 385rpx;
+z-index: -1;
+}

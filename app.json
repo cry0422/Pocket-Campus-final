@@ -1,0 +1,65 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/create/create",
+    "pages/activityDetail/activityDetail",
+    "pages/register/register",
+    "pages/map/map",
+    "pages/time/time",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/user/user-info/user-info",
+    "pages/about/about",
+    "pages/feedback/feedback",
+    "pages/shadule/index",
+    "pages/calendar/calendar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Pocket Campus",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text": "HomePage",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-h.png"
+      },
+      {
+        "pagePath":"pages/activity/activity",
+        "text": "Activity",
+        "iconPath": "images/activity.png",
+        "selectedIconPath": "images/activity-active.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "Map",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map-h.png"
+      },
+      {
+        "pagePath": "pages/time/time",
+        "text": "Timetable",
+        "iconPath": "images/time.png",
+        "selectedIconPath": "images/time-h.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "User",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-h.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

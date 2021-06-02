@@ -1,0 +1,35 @@
+<!--pages/activityDetail/activityDetail.wxml-->
+<view class='imagesize'><image src="{{pictureUrl}}" class='in-image' mode='aspectFill'></image></view>
+
+<text class="cal">{{activity.name}}</text>
+<text class="cal2">({{activity.type}})</text>
+<view class="divLine"></view>
+
+<view class="info-wrap">
+    <image class="info-icon" src="/images/map-h.png"></image>
+    <view class="info-name" catchtap="navigation">{{activity.location}} ></view>
+</view>
+
+<view class="info-wrap">
+    <image class="info-icon" src="/images/time-h.png"></image>
+    <view class="info-name">{{activity.startTime}} ~ {{activity.endTime}}</view>
+</view>
+
+<view class="info-wrap">
+    <image class="info-icon" src="/images/user-h.png"></image>
+    <view class="info-name">Number of registered applicants: {{activity.number}}</view>
+</view>
+
+<view class="divLine"></view>
+<view class="info-wrap">
+<text class="subcal">Details:</text>
+</view>
+
+<view class="info-wrap">
+<text class="details">{{activity.details}}</text>
+</view>
+
+<view>
+    <text class="cal1" wx:if="{{attend=='attend'}}">Deadline {{activity.deadTime}}</text>
+    <button class="sim-btn sim-btn-info" bindtap="register">{{attend}}</button>
+</view>

@@ -1,0 +1,57 @@
+/* pages/register/register.wxss */
+.title_tips{
+  display: block;
+  padding-left: 24rpx;
+  margin-top:40rpx;
+  margin-bottom:20rpx;
+  font-size:28rpx;
+  justify-content: center;
+  text-align:center;
+}
+
+.sim-form {
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.sim-form-group,.sim-form-textarea,.sim-form-switch {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30rpx 40rpx;
+  background-color: #fff;
+  border-top: 1px solid #eee;  
+}
+.sim-form-group:first-child{
+  border-top: none;
+}
+.sim-form-group>label:first-child {
+  background-color: #fff;
+  float: left;
+  width: 280rpx;
+}
+.sim-form-group picker view{
+  color: #666;
+}
+
+.sim-btn {
+  margin: 20rpx;
+  margin-top: 50rpx;
+}
+
+.sim-btn-info {
+  background-color: #33AEFD;
+  color: #fff;
+}
+
+.cal{font-size: larger;
+  color: blueviolet;
+  display: flex;
+  vertical-align: center; 
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+}

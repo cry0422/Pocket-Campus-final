@@ -1,0 +1,8 @@
+
+  <image mode='scaleToFill' 
+  src='/images/calendar.png' 
+  bindtouchstart='touchStartHandle' 
+  bindtouchmove='touchMoveHandle' 
+  bindload='load' 
+  style="width: {{ touch.scaleWidth }}px;height: {{ touch.scaleHeight }}px">
+</image>

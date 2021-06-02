@@ -1,0 +1,90 @@
+<!--pages/create/create.wxml-->
+  <!-- 活动信息表单 -->
+  <view class="sim-form">
+    <view class="sim-form-group">
+        <label style="width:800rpx; display:block">Please complete the activity information</label>
+    </view>
+
+    <view class="sim-form-group">
+      <label>activity type:</label>
+      <picker bindchange="bindPickerChange" value="{{activityIndex}}" range="{{activityArr}}" bindchange="activityChange">
+        <view class="picker">
+          {{activityArr[activityIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+    <view class="sim-form-group">
+      <label>name of activity:</label>
+      <input placeholder="Please enter the name" bindinput="inputActivityName"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>Start Time:</label>
+      <picker mode="multiSelector" value="{{startTime}}" bindchange="startTimeChange" range="{{dateTimeArray}}">
+        <view class="picker">
+          {{dateTimeArray[0][startTime[0]]}}-{{dateTimeArray[1][startTime[1]]}}-{{dateTimeArray[2][startTime[2]]}} {{dateTimeArray[3][startTime[3]]}}:{{dateTimeArray[4][startTime[4]]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+     <view class="sim-form-group">
+      <label>End Time:</label>
+      <picker mode="multiSelector" value="{{endTime}}" bindchange="endTimeChange"range="{{dateTimeArray1}}">
+        <view class="picker">
+          {{dateTimeArray1[0][endTime[0]]}}-{{dateTimeArray1[1][endTime[1]]}}-{{dateTimeArray1[2][endTime[2]]}} {{dateTimeArray1[3][endTime[3]]}}:{{dateTimeArray1[4][endTime[4]]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+     <view class="sim-form-group">
+      <label>Deadline for registration:</label>
+      <picker mode="multiSelector" value="{{deadTime}}" bindchange="deadTimeChange"range="{{dateTimeArray2}}">
+        <view class="picker">
+          {{dateTimeArray2[0][deadTime[0]]}}-{{dateTimeArray2[1][deadTime[1]]}}-{{dateTimeArray2[2][deadTime[2]]}} {{dateTimeArray2[3][deadTime[3]]}}:{{dateTimeArray2[4][deadTime[4]]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+    <view class="sim-form-group">
+      <label>Location:</label>
+      <picker bindchange="bindPickerChange" value="{{locationIndex}}" range="{{locationArr}}" bindchange="locationChange">
+        <view class="picker">
+          {{locationArr[locationIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+      <input placeholder="Please enter Room" bindinput="inputRoom"/>
+    </view>
+
+
+    <!-- <view class="sim-form-group">
+      <label style="width:200rpx; display:block">请上传海报图片</label>
+      <view bindtap="chooseImage">
+          <view class="image_show" wx:if="{{imageList.length>0}}">
+            <block wx:for="{{imageList}}" wx:for-item="image">
+              <image src="{{image}}"></image>
+            </block>
+          </view>
+          
+
+
+          <view class="image_border" wx:if="{{imageList.length==0}}">
+            <view class="image-plus-horizontal"></view>
+            <view class="image-plus-vertical"></view>
+          </view>
+         
+      </view>
+    </view> -->
+  </view>
+
+  
+  <label class="title_tips">Further Information</label>
+  <view class="sim-form">
+    <view class="sim-form-group">
+      <label>Details:</label>
+      <input placeholder="Please enter details" bindinput="inputDetails" />
+    </view>
+  </view>
+  <view>
+    <button class="sim-btn sim-btn-info" bindtap="submitInfo">confirm</button>
+  </view>

@@ -1,0 +1,148 @@
+<!-- 课表 -->
+<scroll-view scroll-x="true" class='scrollClass'>
+  <view class='table'>
+    <view class='table_header'>
+      <view class="th" style='width:130rpx;background-color:white'>
+        <!-- <view class='centerclass cell_label'></view> -->
+      </view>
+      <block wx:for="{{dateArray}}">
+        <view class='th'>
+          <view class="cell_label centerclass">{{item.weekName}}</view>
+          <view class="cell_date_label centerclass">{{item.date_text}}</view>
+        </view>
+      </block>
+    </view>
+    <block wx:for="{{sch_listData}}">
+      <view class='table_main'>
+        <!-- 时间 -->
+        <view class='td' style='width:130rpx;background-color:white;'>
+          <view class="cell_label centerclass">{{item.time_title}}</view>
+        </view>
+        <!-- 周一 -->
+        <view class='td'>
+          <block wx:for="{{item.Mon_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Mon_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.className}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+        <!-- 周二 -->
+        <view class='td'>
+          <block wx:for="{{item.Tues_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Tues_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.className}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+        <!-- 周三 -->
+        <view class='td'>
+          <block wx:for="{{item.Wed_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Wed_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.classNum}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+        <!-- 周四 -->
+        <view class='td'>
+          <block wx:for="{{item.Thur_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Thur_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.classNum}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+        <!-- 周五 -->
+        <view class='td'>
+          <block wx:for="{{item.Fri_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Fri_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.classNum}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+        <!-- 周六 -->
+        <view class='td'>
+          <block wx:for="{{item.Sat_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Sat_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.classNum}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+        <!-- 周日 -->
+        <view class='td'>
+          <block wx:for="{{item.Sun_text}}" wx:for-item="trade" wx:for-index="ind">
+            <view class='{{item.Sun_text.length-1==ind? "table_Text_last_class":"table_Text_class"}}' bindtap='clickDoctor' data-docname='{{trade.classNum}}' data-timeperiod='{{trade.timePeriod}}' data-tutor='{{trade.tutor}}' data-address='{{trade.address}}' data-dayOfWeek='{{trade.dayOfWeek}}'>
+              {{trade.classNum}}
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+<view bindtap='addCourse'>
+  <image class="add_icon" src="../../images/plus.png"></image>
+</view>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+  <view class="drawer_title">Add New Schedules</view>
+  <form bindsubmit="submitSchedule" class="forms">
+    <view class="wx-popup" hidden="{{flag}}">
+  <view class='popup-container'>
+    <view class="wx-popup-title">{{title}}</view>
+    <view class="wx-popup-con">{{content}}</view>
+    <view class="wx-popup-btn">
+      <text class="btn-no" bindtap='_error'>{{btn_no}}</text>
+      <text class="btn-ok" bindtap='_success'>{{btn_ok}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+    <view class="drawer_content">
+      <view class="top grid">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            <label class="title col-0 box">Day of Week</label>
+            <text decode="{{true}}">&nbsp;&nbsp;</text>
+            {{multiArray[0][multiIndex[0]]}}
+            <text decode="{{true}}">&nbsp;&nbsp;</text>
+            <label class="title col-0 box">Time</label>
+            <text decode="{{true}}">&nbsp;&nbsp;</text>
+            {{multiArray[1][multiIndex[1]]}}
+          </view>
+        </picker>
+      </view>
+      <!-- <view class="top grid">
+        <label class="title col-0">timePeriod</label>
+        <input class="input_base input_h30 col-1" name="timePeriod" placeholder="Please input the time of schedule" ></input>
+      </view> -->
+      <view class="top grid">
+        <label class="title col-0 box">Class ID</label>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input class="input_base input_h30 col-1" name="classNum" placeholder="Please input the num of schedule"></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0 box">Class Name</label>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input class="input_base input_h30 col-1" name="className" placeholder="Please input the place of schedule"></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0 box">Tutor</label>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input class="input_base input_h30 col-1" name="tutor" placeholder="Please input the tutor of schedule"></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0 box">Location</label>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+        <picker bindchange="bindPickerChange" value="{{locationIndex}}" range="{{locationArray}}">
+          <view class="picker">{{locationArray[locationIndex]}}</view>
+        </picker>
+        <text decode="{{true}}">&nbsp;&nbsp;</text>
+        <input class="input_base input_h30 col-1" name="address" placeholder="Please input the place"></input>
+      </view>
+      <view class="bt">
+        <button class="bt1" bindtap="cancel">CANCEL</button>
+        <button class="bt2" form-type="submit">COMFIRM</button>
+      </view>
+    </view>
+  </form>
+</view>

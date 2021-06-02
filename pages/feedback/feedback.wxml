@@ -1,0 +1,36 @@
+<view class="feedback-page">
+    <view>
+        <view>
+            <view id="feedback">
+                <view class="feedback-cell feedback-cell-system">
+                    <image ng-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII=" alt="" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII="></image>
+                    <view class="bubble">Hello, can I help you？<span class="wedge"></span></view>
+                </view>
+                <view class="feedback-cell feedback-cell-user">
+                    <image ng-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII=" alt="" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII="></image>
+                    <view class="bubble">How to customize course schedule？<span class="wedge"></span></view>
+                </view>
+                <view class="feedback-cell feedback-cell-system">
+                    <image ng-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII=" alt="" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII="></image>
+                    <view class="bubble">you can go to timebable module to add your personal courses<span class="wedge"></span></view>
+                </view>
+                <view class="feedback-cell feedback-cell-user">
+                    <image ng-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII=" alt="" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII="></image>
+                    <view class="bubble">How to register as a member？<span class="wedge"></span></view>
+                </view>
+                <view class="feedback-cell feedback-cell-system">
+                    <image ng-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII=" alt="" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII="></image>
+                    <view class="bubble">At present, we only support third-party login, such as QQ login, microblog and wechat login, but we can't register directly.<span class="wedge"></span></view>
+                </view>
+                <view class="feedback-cell feedback-cell-user">
+                    <image ng-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII=" alt="" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHV8AAB1fAThpIDAAAACxSURBVGhD7dKxDcAgFMTQkP1HTUE2iJjhFdGXTO8T2Kxnv9fkc0++/Ll7D/i7YAUqgAb6QiiQ8QqwQhyoAApkvAKsEAcqgAIZrwArxIEKoEDGK8AKcaACKJDxCrBCHKgACmS8AqwQByqAAhmvACvEgQqgQMYrwApxoAIokPEKsEIcqAAKZLwCrBAHKoACGa8AK8SBCqBAxivACnGgAiiQ8QqwQhyoAApkvAKsEAfGF/gAZn4DTUiZc3IAAAAASUVORK5CYII="></image>
+                    <view class="bubble">thank you hahahah~~~~<span class="wedge"></span></view>
+                </view>
+                <view class="reply-box">
+                    <input type="text" placeholder="post your suggestions" />
+                    <button class="send">SEND</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/activity/activity.wxml-->
+<view class='search'>
+  <input type='text' placeholder='Please enter key words' confirm-type='search' value="{{inputValue}}" bindinput='inputBind'
+    bindconfirm='query'></input>
+  <image class="" src='/images/search.png' bindtap='query'></image>
+</view>
+<view>
+<text class="cal">All activites</text>
+<view class="divLine"></view>
+</view>
+
+<view width="100%" class='activityMenu'>
+  <text wx:if="{{selectState == false}}">This activity does not exist!</text>
+  <scroll-view scroll-y>
+  <block wx:for="{{activities}}">
+    <view class='out'>
+      <view class="topic">
+        <view class="ttl" catchtap="navigateTo"  data-title='{{item.name}}'>
+          <image src='{{item.pictureUrl}}' class='in-image' mode='aspectFill'></image>
+          <view>{{item.name}}</view>
+        </view>
+        <view class="ctt">{{item.startTime}} ~ {{item.endTime}}</view>
+      </view>
+    </view>
+  </block>
+  </scroll-view>
+</view>
+
+<!--icon-->>
+<view bindtap='addActivity'>
+  <image class="add_icon" src="../../images/plus.png"></image>
+</view>

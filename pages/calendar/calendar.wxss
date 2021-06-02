@@ -1,0 +1,8 @@
+
+.img {
+  height: 120%;
+  width: 150%;
+  /* display: flex;
+  justify-content: center; */
+  position: absolute;
+  }

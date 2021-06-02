@@ -1,0 +1,16 @@
+<!-- <view class="aa"> About Us   </view>
+<view class="bb">  Ruiyang chen 2032244  </view>
+<view class="cc"> Yilin Xue  2032686   </view>
+<view class="dd">  Jiaqi chen  2032717  </view>
+<view class="ee"> Yunzhe Song  2031981</view> -->
+  
+<view>
+  <text class="cal">About Us</text>
+  <text class="call"> Pocket Campus</text>
+  <text class="call"> XJTLU</text>
+
+</view>
+
+<view class="logo">
+  <image src="/images/XJTLU.jpeg" mode="widthFix" class="image_head"></image>
+</view> 

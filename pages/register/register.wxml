@@ -1,0 +1,23 @@
+<!--pages/register/register.wxml-->
+<text class="cal">Register form</text>
+<label class="title_tips"></label>
+  <view class="sim-form">
+    <view class="sim-form-group">
+      <label>activity:</label>
+      <text>{{activity.name}}</text>
+    </view>
+
+    <view class="sim-form-group">
+      <label>applicant:</label>
+      <input placeholder="Please input your name" bindinput="inputName" />
+    </view>
+
+    <view class="sim-form-group">
+      <label>student ID:</label>
+      <input placeholder="Please enter your student ID" bindinput="inputID" />
+    </view>
+  </view>
+
+  <view>
+    <button class="sim-btn sim-btn-info" bindtap="submitInfo">confirm</button>
+  </view>

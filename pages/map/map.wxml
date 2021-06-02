@@ -1,0 +1,17 @@
+<view class="map_container">
+  <map class='map' longitude='{{longitude}}' latitude='{{latitude}}' scale='{{scale}}' markers='{{markers}}'
+    controls="{{controls}}" bindcontroltap="bindcontroltap" polyline='{{polyline}}' circles="{{circles}}"
+    bindmarkertap='bindmarkertap' bindcontroltap='bindcontroltap' show-location>
+    <cover-view class="select-info" style="{{selectHeight}}">
+      <cover-view class="selected" bindtap="tapSelect">{{selectInfo}}</cover-view>
+      <cover-view class="select-list" bindtap="tapSelectClose">
+        <cover-view class="select-item" wx:for="{{selectList}}" wx:key="{{item}}" data-item="{{item}}"
+          bindtap="selectItem">
+          <cover-view class="item" style="{{ item === selectInfo ? 'color:green' : ''}}">{{item}}</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class="select-cancel" bindtap="tapSelectClose">Cancel</cover-view>
+    </cover-view>
+  </map>
+</view>
+<cover-view></cover-view>

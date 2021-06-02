@@ -1,0 +1,26 @@
+.cal{font-size: larger;
+  color: blueviolet;
+  display: flex;
+  vertical-align: center; 
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 100px;
+}
+
+.call{font-size: normal;
+  color: black;
+  display: flex;
+  vertical-align: center; 
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 100px;
+}
+
+.logo {
+  height: 450 rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
